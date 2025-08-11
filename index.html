@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Justin Papio - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            color: #333;
+        }
+        header {
+            background-color: skyblue;
+            color: white;
+            padding: 20px 50px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .intro h2 {
+            color: skyblue;
+            font-size: 2rem;
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .skill-card {
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .skill-card img {
+            max-width: 80px;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .skill-card span {
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: skyblue;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Paul Justin Papio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="container intro" id="about">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hello! I am Paul Justin Papio, a passionate programmer with expertise in multiple coding languages. I create efficient, scalable, and modern software solutions.</p>
+    </section>
+
+    <section class="container" id="skills">
+        <h2 style="text-align:center; color: skyblue; margin-bottom: 30px;">My Skills</h2>
+        <div class="skills">
+            <div class="skill-card">
+                <img src="assets/java.png" alt="Java Icon">
+                <span>Java</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/python.png" alt="Python Icon">
+                <span>Python</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/webdev.png" alt="Web Development Icon">
+                <span>Web Development</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/c++.png" alt="C++ Icon">
+                <span>C++</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/csharp.png" alt="C# Icon">
+                <span>C#</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <h2 style="text-align:center; color: skyblue; margin-bottom: 30px;">Contact Me</h2>
+        <p style="text-align:center;">Email: <a href="mailto:pauljustinpapio@gmail.com">pauljustin@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Paul Justin Papio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
